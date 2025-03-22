@@ -3,7 +3,7 @@ services:
   ollama:
     build:
       context: .
-      dockerfile: Dockerfile_ollama
+      dockerfile: Dockerfile_ollama_temp
     ports:
       - "11434:11434"
     volumes:
@@ -11,7 +11,7 @@ services:
   n8n:
     build:
       context: .
-      dockerfile: Dockerfile_n8n
+      dockerfile: Dockerfile
     ports:
       - "5678:5678"
     depends_on:
